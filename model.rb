@@ -15,11 +15,11 @@ require 'pry'
 
 class RestaurantModel
   def initialize(args = {})
-    restaurant_name = args[:restaurant_name].chomp
-    cuisine = args[:cuisine]
-    address = "#{args[:building]} #{args[:street]}"
-    zip = args[:zipcode]
-    phone = args[:phone]
+    restaurant_name = args["dba"].chomp
+    cuisine = args["cuisine_description"]
+    address = "#{args["building"]} #{args["street"]}"
+    zip = args["zipcode"]
+    phone = args["phone"]
   end
 
   def to_s
